@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rubens Flinco">
+	<link rel="shortcut icon" href="https://www.mt4.com.br//wp-content/uploads/2014/05/favicon.png" type="image/x-icon" />
+
+    <title>MT4 - Lista de contatos</title>
+
+    <link href="src/frameworks/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="src/frameworks/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-mt4">
+<div class="container">
+<div class="navbar-header">
+<a href="javascript:window.location.reload();" class="navbar-left"><img src="https://www.mt4.com.br//wp-content/uploads/2014/05/logo-mt4networks2.png" alt="MT4 Networks"></a>
+</div>
+<form class="navbar-form navbar-right" action="javascript:get_pesquisa();">
+  <div class="form-group">
+    <input type="text" class="form-control form-pesquisa" placeholder="Pesquisar &raquo;" id="i_pesquisa" name="i_pesquisa" required>
+  </div>
+</form>
+
+</div>
+</nav>
+
+<div class="container">
+
+<div>
+
+<div id="Alertas"><div class='alert alert-info'><i class="fa fa-spinner fa-pulse fa-fw"></i>Carregando...</div></div>
+
+<div class="panel panel-default">
+<table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Nome</th>
+<th>Opções</th>
+</tr>
+</thead>
+<tbody id="ListaContatos">
+</tbody>
+</table>
+</div>
+
+</div>
+
+<nav align="center" id="Nav_Paginas">
+<ul class="pagination">
+    <li>
+      <a id="left" href="javascript:get_lista(PaginaAtual-1);">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+</ul>
+<ul class="pagination" id="Paginas"></ul>
+<ul class="pagination">
+    <li>
+      <a id="right" href="javascript:get_lista(PaginaAtual+1);">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+</ul>
+</nav>
+
+<center>
+<br><br>
+<p>© 2017 - Rubens Flinco !</p>
+<a href="http://www.planetsweb.com.br/rubens_flinco" target="_blank" style="cursor: url(http://fotos.planetsweb.com.br/geral/logo.cur) 4 12, auto!important;border: none!important;">
+<img src="http://fotos.planetsweb.com.br/painel/logotipo_home.png" alt="PlanetsWEB">
+</a></center>
+
+</div>
+
+    <script src="src/frameworks/jquery-3.2.1/js/jquery-3.2.1.min.js"></script>
+    <script src="src/frameworks/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="src/js/main.js"></script>
+	<script src="src/js/remover.js"></script>
+	<script src="src/js/pesquisar.js"></script>
+	<script src="src/js/editar.js"></script>
+	<script src="src/js/detalhes.js"></script>
+  </body>
+</html>
