@@ -12,3 +12,6 @@ A empresa MT4 me desafiou a criar uma pagina que exibi uma lista de contatos, os
 <b>Preview:</b>
 <br>
 <img src="https://i.imgur.com/TpPSa8w.png">
+<img src="https://i.imgur.com/ZzQmiYS.png">
+<img src="https://i.imgur.com/0gcDCSs.png">
+<img src="https://i.imgur.com/Nai5Jc4.png">
